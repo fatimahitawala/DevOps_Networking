@@ -2,7 +2,7 @@
 ## This documentation is helpful to understand the networking concept required for a DevOps Engineer. Please note I am using Ubuntu Linux OS and its commands.
 ### IP Address Concept.
 IP (Internet Protcol) address is a unique address provided to a device, every device have its own IP address which is connected to a network, like our home address but this is in a digital format.
-This unique addresses have two version that is IPV4 and IPV6. IPV4 is commonoly used and we can identify the difference between, IPV4 -> 127.0.0.1, 192.168.x.x and IPV6 -> fe80:: or 2001::, IPV4 is a 32 bit (8+8+8+8) and IPV6 is 128 bit. To check IP addresses of the system use commands ifconfig, ip addr show. To check IP address of active connections then we can use command like netstat -tunp. 
+This unique addresses have two version that is IPV4 and IPV6. IPV4 is commonly used and we can identify the difference between, IPV4 -> 127.0.0.1, 192.168.x.x and IPV6 -> fe80:: or 2001::, IPV4 is a 32 bit (8+8+8+8) and IPV6 is 128 bit. To check IP addresses of the system use commands ifconfig, ip addr show. To check IP address of active connections then we can use command like netstat -tunp. 
 ### Difference between Public, Private IP addresses and NAT.
 #### Public IP
 The most common example is web-server, VPN, this is for those device which need to be accessed from internet. For instance 8.8.8.8 is a IP of google.com
