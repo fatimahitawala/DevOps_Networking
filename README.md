@@ -13,6 +13,25 @@ This is very useful, help the device exposed to private IP to access securely to
 ### CIDR (Classes Inter-Domain Routing) Concept for IPV4.
 CIDR is a method use to allocate IP addresses and manage network routing more efficiently. It helps to save unused IPs, like if we want to use  IP address betweenthese ranges 172.16.0.0 <-> 172.16.255.255 then we can provide IP address 172.16.0.0/255. This site is very useful if you guys want to learn CIDR calculation https://ipcisco.com/lesson/cidr-and-cidr-calculation/
 ### Classful and Classless IP
-Classful are divided into Class A, B, C. In below image you can see, how they are divided.
+Classful are divided into Class A, B, C. In below image you can see, how they are divided ( here rooms = IP). This is a old method and there is wastage of IP addresses and complicated netowrking rules.
 <img width="509" height="131" alt="image" src="https://github.com/user-attachments/assets/98aabb79-86bd-4e85-b7b7-30e4f6f6fb8b" />
+Solution: If someone want only 300 IPs so instead if using two Class C we can simple decrease the subnet by 1 and get slighly bigger unsed IP addresses.
+so instead of using /24 mask which is 256, we can use /23 which gives 510 usead IP.
+Calculation of unused IP is:
+CIDR notation like /24 means:
+The first 24 bits are for the network, and the rest are for hosts.”
+Since IP addresses are 32 bits total, that leaves: 32 − 24 = 8 bits for host addresses.
+If you have 8 bits for hosts, the total number of IPs is:
+2^8 = 256 \text{ total IPs}. Here first IP is of network address and last IP is of broadcast addresses. So final value of unsed IP is 254.
+Now if we decrease subnet by 1 then:
+The first 23 bits are for the network, and the rest are for hosts.”
+Since IP addresses are 32 bits total, that leaves: 32 − 23 = 9 bits for host addresses.
+If you have 8 bits for hosts, the total number of IPs is:
+2^9 = 512 \text{ total IPs}. Here first IP is of network address and last IP is of broadcast addresses.So final value of unsed IP is 510.
+Summary:
+- You need 300 IPs
+- Class C only gives 254
+- CIDR lets you adjust the size of your network
+- Use /23 instead of /24 → problem solved!
+
 
