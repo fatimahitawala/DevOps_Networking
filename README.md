@@ -41,4 +41,5 @@ DevOps teams use a hypervisor to manage virtual machines. A hypervisor, or a Vir
 The hypervisor runs on top of a physical dedicated server or an operating system to emulate the underlying hardware.
 Virtualization relies on cloud computing to ensure optimal performance at all times. Cloud allows a VM to scale up or down on-demand and in a matter of minutes to meet resource requirements.
 <img width="623" height="384" alt="image" src="https://github.com/user-attachments/assets/562fa448-236c-49ec-b4e2-83dab51e4ff3" />
+
 Virtual machines allow a team to build, test, and deploy code within simulated environments without wasting computing resources.
