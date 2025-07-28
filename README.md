@@ -17,8 +17,8 @@ Classful are divided into Class A, B, C. In below image you can see, how they ar
 
 <img width="509" height="131" alt="image" src="https://github.com/user-attachments/assets/98aabb79-86bd-4e85-b7b7-30e4f6f6fb8b" />
 
-Solution: If someone want only 300 IPs so instead if using two Class C we can simple decrease the subnet by 1 and get slighly bigger unsed IP addresses.
-so instead of using /24 mask which is 256, we can use /23 which gives 510 usead IP.
+Solution: If someone want only 300 IPs so instead if using two Class C we can simply decrease the subnet by 1 and get slighly bigger unsed IP addresses range.
+So instead of using /24 mask which is 256, we can use /23 which gives 510 usead IP.
 Calculation of unused IP is:
 CIDR notation like /24 means:
 The first 24 bits are for the network, and the rest are for hosts.”
@@ -41,5 +41,4 @@ DevOps teams use a hypervisor to manage virtual machines. A hypervisor, or a Vir
 The hypervisor runs on top of a physical dedicated server or an operating system to emulate the underlying hardware.
 Virtualization relies on cloud computing to ensure optimal performance at all times. Cloud allows a VM to scale up or down on-demand and in a matter of minutes to meet resource requirements.
 <img width="623" height="384" alt="image" src="https://github.com/user-attachments/assets/562fa448-236c-49ec-b4e2-83dab51e4ff3" />
-
 Virtual machines allow a team to build, test, and deploy code within simulated environments without wasting computing resources.
