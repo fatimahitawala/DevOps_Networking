@@ -33,5 +33,11 @@ Summary:
 - Class C only gives 254
 - CIDR lets you adjust the size of your network
 - Use /23 instead of /24 → problem solved!
+### Virtual Machine
+Virtual Machine runs on a portion of a physical device, it mimics like a computer, it have all components of a computer like CPU, RAM, Networks and storage.
+DevOps teams use a hypervisor to manage virtual machines. A hypervisor, or a Virtual Machine Monitor (VMM), is a piece of software, firmware, or hardware that creates and runs VMs.
+The hypervisor runs on top of a physical dedicated server or an operating system to emulate the underlying hardware.
+Virtualization relies on cloud computing to ensure optimal performance at all times. Cloud allows a VM to scale up or down on-demand and in a matter of minutes to meet resource requirements.
+<img width="623" height="384" alt="image" src="https://github.com/user-attachments/assets/562fa448-236c-49ec-b4e2-83dab51e4ff3" />
 
-
+Virtual machines allow a team to build, test, and deploy code within simulated environments without wasting computing resources.
