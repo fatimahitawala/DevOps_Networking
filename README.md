@@ -10,6 +10,9 @@ The most common example is web-server, VPN, this is for those device which need 
 This is ideal for internal communication which uses local network, internal routing for device to device communication. For example home router 192.168.1.1, 10.0.0.1 etc
 #### NAT Gateway
 This is very useful, help the device exposed to private IP to access securely to internet using a shared Public IP address.
-
 ### CIDR (Classes Inter-Domain Routing) Concept for IPV4.
 CIDR is a method use to allocate IP addresses and manage network routing more efficiently. It helps to save unused IPs, like if we want to use  IP address betweenthese ranges 172.16.0.0 <-> 172.16.255.255 then we can provide IP address 172.16.0.0/255. This site is very useful if you guys want to learn CIDR calculation https://ipcisco.com/lesson/cidr-and-cidr-calculation/
+### Classful and Classless IP
+Classful are divided into Class A, B, C. In below image you can see, how they are divided.
+<img width="509" height="131" alt="image" src="https://github.com/user-attachments/assets/98aabb79-86bd-4e85-b7b7-30e4f6f6fb8b" />
+
