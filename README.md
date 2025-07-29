@@ -50,18 +50,18 @@ OSI LAYERS uses 7 layers of data transmission, how a DevOps Engineer make a http
 
 Here is my understanding of a OSI layer:
 
-7) Application Layer: I created a CI/CD pipeline to deploy my Python application to a production server. The pipeline is triggered via GitLab’s UI or API over HTTPS.
+Application Layer 7th: I created a CI/CD pipeline to deploy my Python application to a production server. The pipeline is triggered via GitLab’s UI or API over HTTPS.
    
-6) Presentation Layer: GitLab encrypts webhook payloads using TLS when communicating with external services (e.g., monitoring tools or deployment APIs), protecting sensitive data like commit messages and project metadata.
+Presentation Layer 6th: GitLab encrypts webhook payloads using TLS when communicating with external services (e.g., monitoring tools or deployment APIs), protecting sensitive data like commit messages and project metadata.
    
-5) Session Layer: The pipeline establishes an SSH session to the GitLab Runner or target VM, maintaining connection state and handling token expiration or timeouts.
+Session Layer 5th: The pipeline establishes an SSH session to the GitLab Runner or target VM, maintaining connection state and handling token expiration or timeouts.
    
-4) Transport Layer: Reliable data transfer occurs over TCP (e.g., ports 22 for SSH or 443 for HTTPS), ensuring artifact uploads and job logs are transmitted correctly.
+Transport Layer 4th: Reliable data transfer occurs over TCP (e.g., ports 22 for SSH or 443 for HTTPS), ensuring artifact uploads and job logs are transmitted correctly.
    
-3) Network Layer: The GitLab Runner routes traffic to the target VM using IP addressing and subnet configurations.
+Network Layer 3rd: The GitLab Runner routes traffic to the target VM using IP addressing and subnet configurations.
    
-2) Data Link Layer: The runner checks MAC address reachability; VLAN misconfigurations may disrupt connectivity in self-hosted environments.
+Data Link Layer 2nd: The runner checks MAC address reachability; VLAN misconfigurations may disrupt connectivity in self-hosted environments.
    
-1) Physical Layer: The deployment reaches the VM via its NIC, completing the pipeline and delivering the Python application to the server.
+Physical Layer 1st: The deployment reaches the VM via its NIC, completing the pipeline and delivering the Python application to the server.
 
 
