@@ -49,7 +49,17 @@ OSI ( Open System Interconnection) Model is important for a DevOps Engineer as i
 OSI LAYERS uses 7 layers of data transmission, how a DevOps Engineer make a http/API request and how data is passed through each layer till it reached the last layer i.e physical layer.
 
 Here is my understanding of a OSI layer:
-7) Application Layer: I created a CI/CD pipeline to Deploy my python application on production server. So first my pipeline starts running on gitlab UI triggered by HTTP/API.
+7) Application Layer: I created a CI/CD pipeline to Deploy my Python application on production server. So first my pipeline starts running on gitlab UI triggered by HTTP/API.
+
 6) Presentation Layer: Then it goes to Presentation layer. This layer helps to format and encrypt webhooks using TLS from Gitlab to external service, like when Gitlab sends a webhook to external services (CI/CD tool or Monitoring) it secures using HTTPS. This protects sensitive data like commit messages, usernames, and my python project metadata from being intercepted or spoofed.
-5)
+   
+5) Session Layer: After securing the webhook it maintains a SSH Session to Gitlan runner, checking for timeout and token expiration.
+
+4) Transport Layer: Relaible delivery (TCP/UDP). Check for port 22 or 443 is open or not. Helps in upload reliable artifacts and capture the job logs.
+
+3) Netwrok Layer: Now the Gitlab runner which I am currently using checks if it can connects to VM via route IPs.
+
+2) Data Link Layer: Checks for MAC Address is reachable or not. If not it Diagnosing VLAN issues in self-hosted runners.
+
+1) Physical Layer: Finally it reached to Virtual Machine, checks for NIC and my Python application reaches to a server.
 
