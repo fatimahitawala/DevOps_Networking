@@ -43,3 +43,13 @@ Virtualization relies on cloud computing to ensure optimal performance at all ti
 <img width="623" height="384" alt="image" src="https://github.com/user-attachments/assets/562fa448-236c-49ec-b4e2-83dab51e4ff3" />
 
 Virtual machines allow a team to build, test, and deploy code within simulated environments without wasting computing resources.
+### OSI Model for DevOps Enginner.
+OSI ( Open System Interconnection) Model is important for a DevOps Engineer as it helps to troubleshoot, provides security, optimize proper delivery of artifact and used in infrastructre as code (IAC).
+
+OSI LAYERS uses 7 layers of data transmission, how a DevOps Engineer make a http/API request and how data is passed through each layer till it reached the last layer i.e physical layer.
+
+Here is my understanding of a OSI layer:
+7) Application Layer: I created a CI/CD pipeline to Deploy my python application on production server. So first my pipeline starts running on gitlab UI triggered by HTTP/API.
+6) Presentation Layer: Then it goes to Presentation layer. This layer helps to format and encrypt webhooks using TLS from Gitlab to external service, like when Gitlab sends a webhook to external services (CI/CD tool or Monitoring) it secures using HTTPS. This protects sensitive data like commit messages, usernames, and my python project metadata from being intercepted or spoofed.
+5)
+
