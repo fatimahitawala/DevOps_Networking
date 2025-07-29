@@ -64,4 +64,18 @@ Data Link Layer 2nd: The runner checks MAC address reachability; VLAN misconfigu
    
 Physical Layer 1st: The deployment reaches the VM via its NIC, completing the pipeline and delivering the Python application to the server.
 
+### Same Example using  TCP/IP Model which 4 layer and most commmonly used nowadays.
+#### TCP/IP Model
+
+Application Layer: This is a combination of original Application layer along with Presentation and Session Layer. When CI/CD pipeline triggers via HTTP/HTTPS, Webhook is secruly sent to a external service and SSH is used for deployment. Python app logic and metadata handled here.
+
+Transport Layer: TCP ensures reliable delivery of data ( eg artifacts and logs). Port like SSH (22) and HTTPS (443) are validated. Handles retransmissions and error correction.
+
+Internet Layer: GitLab Runner routes traffic using IP addresses. Subnetting, routing tables, and NAT may be involved. Ensures packets reach the correct VM or cloud endpoint.
+
+Network Access Layer: This is a Combination of Data link Layer and Physical Layer. MAC address resolution and VLAN checks (especially in self-hosted runners) NIC status and physical connectivity to VM. Diagnosing low-level network issues.
+
+
+
+
 
