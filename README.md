@@ -79,14 +79,17 @@ Network Access Layer: This is a Combination of Data link Layer and Physical Laye
 Above transport layer of TCP/IP model also introduce the concept of  ports and protocol, Its like a package arriving to your computer from internet, that comptures have many department like apps/services and each department have a TCP port number.
 The OS uses this port number to route data to correct process.
 Here are some known port numbers that are non-privileged:
-Port Number|Process|	What it’s used for:
 
 
-22	          SSH	   Secure shell, remote access, and file transfer
-53	          DNS	   Resolving domain names into IP addresses
-80	          HTTP	   Serving web pages
-443	       HTTPs	Serving web pages in a secure manner
-3306	       MySQL	Database connections
+
+##### Port Number|Process|	What it’s used for:
+
+
+##### 22	          SSH	   Secure shell, remote access, and file transfer,
+##### 53	          DNS	   Resolving domain names into IP addresses,
+##### 80	          HTTP	   Serving web pages,
+##### 443	       HTTPs	Serving web pages in a secure manner,
+##### 3306	       MySQL	Database connections,
 
 non-privilegedanyone can use them without special permission, some require root permissions. Ports 1-1023 are called “well-known ports” and require root permissions before a server can listen to them. It’s a good practice to avoid running web servers as root, assign minimal permissions to services, and use nonprivileged ports when possible. That’s why sometimes we can see ports 8080 for HTTP and ports 433 for HTTPS they’re non-privileged.
 
