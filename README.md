@@ -79,7 +79,9 @@ Network Access Layer: This is a Combination of Data link Layer and Physical Laye
 Above transport layer of TCP/IP model also introduce the concept of  ports and protocol, Its like a package arriving to your computer from internet, that comptures have many department like apps/services and each department have a TCP port number.
 The OS uses this port number to route data to correct process.
 Here are some known port numbers that are non-privileged:
-Port Number|Process|	What it’s used for
+Port Number|Process|	What it’s used for:
+
+
 22	          SSH	   Secure shell, remote access, and file transfer
 53	          DNS	   Resolving domain names into IP addresses
 80	          HTTP	   Serving web pages
