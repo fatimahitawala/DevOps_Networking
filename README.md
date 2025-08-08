@@ -93,5 +93,14 @@ Here are some known port numbers that are non-privileged:
 
 non-privilegedanyone can use them without special permission, some require root permissions. Ports 1-1023 are called “well-known ports” and require root permissions before a server can listen to them. It’s a good practice to avoid running web servers as root, assign minimal permissions to services, and use nonprivileged ports when possible. That’s why sometimes we can see ports 8080 for HTTP and ports 433 for HTTPS they’re non-privileged.
 
+### Routing:
+
+Routing is basically a path for package to travel to network, if package wants to travel to a local destination i.e 10.21.0.1/16 from one host to another then take local path. If it travels to 10.0.0.0/8, it takes transit gateway. If destination is at 0.0.0.0 i.e over internet then packet will redirect to NAT.
+NAT: NAT is network address transmission, it helps application having private IP to get connected to internet securely.It is used by routers or firewalls. For example:
+If application IP is 10.0.0.1 (private IP) sends request to 8.8.8.8 on internet,  NAT uses router's public IP i.e 192.168.1.10 and rewites application IP of that of router's IP.
+
+### DNS Domain Name System:
+Humans and computers have to interact, but it would be really hard for humans to interpret IP addresses and impossible for computers to communicate with names. This is where the Domain Name System (DNS) comes it. The DNS merges the needs of both parties, converting human-readable domain names into computer-friendly IP addresses and vice versa.
+
 
 
