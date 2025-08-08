@@ -101,6 +101,13 @@ If application IP is 10.0.0.1 (private IP) sends request to 8.8.8.8 on internet,
 
 ### DNS Domain Name System:
 Humans and computers have to interact, but it would be really hard for humans to interpret IP addresses and impossible for computers to communicate with names. This is where the Domain Name System (DNS) comes it. The DNS merges the needs of both parties, converting human-readable domain names into computer-friendly IP addresses and vice versa.
+A domain is a self-contained network on the internet. There are many domains and each can have subdomains and more below them.
+The easiest way to visualize domains is as a tree with nodes. The top-level namespace (the DNS root zone) is the highest hierarchical level of the DNS and is divided into top-level domains such as .com .gov and .io. Each TLD of that tree represents a domain and all subdomains below it. For example, example.com is a subdomain of the .com domain. You can keep breaking these domains and subdomains down, like folders and subfolders within a file system.
+
+DNS records, also known as zone files, provide information about a domain. This includes the IP address that is associated with this domain and how to handle queries for it. Each DNS record has a time-to-live setting (TTL) which indicates how often a DNS server will refresh it. 
+Below are the most commonly used types of DNS records and their meaning.
+<img width="451" height="351" alt="image" src="https://github.com/user-attachments/assets/0bfbff3c-59ab-4bfb-8309-27f8f9621011" />
+
 
 
 
