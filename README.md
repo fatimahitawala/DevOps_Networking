@@ -106,7 +106,28 @@ The easiest way to visualize domains is as a tree with nodes. The top-level name
 
 DNS records, also known as zone files, provide information about a domain. This includes the IP address that is associated with this domain and how to handle queries for it. Each DNS record has a time-to-live setting (TTL) which indicates how often a DNS server will refresh it. 
 Below are the most commonly used types of DNS records and their meaning.
+
+
 <img width="451" height="351" alt="image" src="https://github.com/user-attachments/assets/0bfbff3c-59ab-4bfb-8309-27f8f9621011" />
+
+
+### HTTP Methods:
+
+As a DevOps engineer, you should know what an HTTP request is, the various HTTP request methods that exist, and how they are different from each other.
+An HTTP request is a request message from a client to a server asking for access to a resource.
+There are 7 main HTTP request methods:
+
+<img width="459" height="230" alt="image" src="https://github.com/user-attachments/assets/76d9f5f1-a8ff-4586-a672-d6d976630048" />
+
+#### HTTP Response Codes:
+Response codes indicate whether a request was completed successfully or failed.
+There are 4 categories of HTTP responses:
+
+200s: Successful responses
+300s: Redirects
+400s: Client errors
+500s: Server errors
+Take a look at some of the most common response codes:
 
 
 
