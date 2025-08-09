@@ -129,6 +129,32 @@ There are 4 categories of HTTP responses:
 500s: Server errors
 Take a look at some of the most common response codes:
 
+### Linux Networking Commands for DevOps
+##### Interface and Address Management
+ 1) ifconfig: This Command is used to check IP address of the machine, netmasks and broadcast addresses.
+ 2) ip address show: This commands is a replacemment of ifconfig and it gives better view of network interface, tunnel and routing
+ 3) hostname: This is name of server, where your application is hosting
+ 4) hostnamectl status: Is part of systemd and allows you to view or change the system’s hostname and other related settings.
+ 5) ip route show: It is used for displaying and modifying the route table.
+ 6) iptables -L: It is used by admins to see IPV4 packet filter and setting up NAT.
+##### Diagnostic and Monitoring Tools
+ 1) ping: It's a echo request, a quick message to a network host (ping google.com)
+ 2) traceroute: See overall path of a packet, from host to network. It's best for monitoring
+ 3) netstat -an: Provides a detailed view of network connections, routing tables, and interface statistics.
+ 4) lsof -i :80:  lists open files and network connections. It’s particularly useful for identifying which processes are using specific network ports.
+ 5) tcpdump -i eth0: It is mostly use to diagonse network issue at packet level.
+    
+##### DNS and Connectivity Utilities
+ 1) dig google.com : queries DNS name servers, providing detailed information about DNS records and helping to troubleshoot DNS issues.
+ 2) nslookup google.com: nslookupis a user-friendly tool for querying DNS servers, providing interactive DNS queries.
+ 3) nmap -sP 192.168.1.0/24 : nmapis used for discovering hosts and services on a network, providing information about the devices and their open ports.
+ 4) ssh-keygen -t rsa: ssh-keygenis used to generate, manage, and convert SSH authentication keys, enabling secure SSH connections.
+ 5) scp file.txt user@remote:/path/to/destination: scpsecurely copies files between hosts over a network using SSH. It’s a reliable method for transferring files while         maintaining security.
+ 6) telnet google.com 80: telnetis a protocol for accessing remote servers over a network. While largely replaced by SSH, it’s still useful for testing connections to          specific ports.
+ 7) curl http://example.com/ap: curlis a versatile tool for making HTTP requests from the command line. It supports a wide range of protocols and is often used for testing     APIs and downloading files.
+ 8) wget: To download file from internet.
+ 9) tcpdump: This command captures and displays network packets in ASCII format, useful for debugging network traffic in a human-readable format.
+
 
 
 
